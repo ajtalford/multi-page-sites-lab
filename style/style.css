@@ -1,8 +1,15 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    color: red;
 }
 
+h1{
+    font-size: 40px;
+}
+em{
+    color: orange;
+}
 html {
     box-sizing: border-box;
 }
@@ -28,7 +35,7 @@ html {
 .about-section {
     background-image: url("../images/0.png");
     background-repeat: no-repeat;
-    height: 450px;
+    height: 550px;
     background-size: cover;
     padding: 20px;
     text-align: center;
