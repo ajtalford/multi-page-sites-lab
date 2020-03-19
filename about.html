@@ -1,227 +1,53 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-
-        html {
-            box-sizing: border-box;
-        }
-
-        *,
-        *:before,
-        *:after {
-            box-sizing: inherit;
-        }
-
-        .column {
-            float: left;
-            width: 33.3%;
-            margin-bottom: 16px;
-            padding: 0 8px;
-        }
-
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            margin: 8px;
-        }
-
-        .about-section {
-            background-image: url("images/0.png");
-            background-repeat: no-repeat;
-            height: 450px;
-            background-size: cover;
-            padding: 20px;
-            text-align: center;
-            background-color: #474e5d;
-            color: white;
-        }
-
-        .container {
-            padding: 0 16px;
-        }
-
-        .container::after,
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        .title {
-            color: grey;
-        }
-
-        .button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 8px;
-            color: white;
-            background-color: #000;
-            text-align: center;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        .button:hover {
-            background-color: #555;
-        }
-
-        @media screen and (max-width: 650px) {
-            .column {
-                width: 100%;
-                display: block;
-            }
-        }
-    </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/ae26917b22.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style/nav-footer.css">
-</head>
+<link rel="stylesheet" href="style/style.css">
 
 <body>
     <div class="navbar">
-        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-        <a href="about.html"><i class="fa fa-fw fa-envelope"></i> About</a>
-        <a href="contact.html"><i class="fa fa-fw fa-user"></i> Contact</a>
-    </div>
+        <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a class="active" href="about.html"><i class="fas fa-meteor"></i> About Me</a>
+        <a href="restaurants.html"><i class="fas fa-pizza-slice"></i> My Fav Eats</a>
+        <!-- <a href="my-kitchen.html"><i class="fas fa-igloo"></i> My Kitchen</a> -->
+        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      </div>
 
-   <div class="about-section">
-        <!-- <h1>About Us Page</h1>
-        <p>Some text about who we are and what we do.</p>
-        <p>Resize the browser window to see that this page is responsive by the way.</p> -->
-    </div> 
+    <section id="about-me">
+        <div "wrapper">
+            <h1 align="center">About Me</h1>
 
-    <h2 style="text-align:center">MEET THE WU</h2>
-
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <img src="images/profile.png" alt="Jane" style="width:100%">
-                <div class="container">
-                    <h2>Visual Killah</h2>
-                    <p class="title">CEO & Founder</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>jane@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                </div>
-            </div>
+            <img src="images/profile.jpg" alt="Image of Albert Talford" class="profile-img">
+            <h3>Problem Solving </h3>
+            <p>
+                The best way to solve large problems is to break it into many simple problems they provide the building
+                blocks for the solution. I am a passionate developer who writes clear and semantic code. I enjoy
+                collaborating on teams where everyone adds their perspective or working independent and provide clear
+                documentation of my code. </p> <hr>
+            <h3>Communication</h3>
+            <p>Before I found my passion for web development and decided to dive in full-time I worked as an Project
+                Manager in the retail industry managing projects that integrated eCommerce. I believe that the jobs of
+                the future will require you to control or be controlled by technology. I plan to be on the controlling
+                side through by automating everything I do.
+            </p><hr>
+            <h3 style="margin-left: 20px;">Creativity</h3>
+            <p>Whether I am helping someone learn to code or improving my portfolio, I am always in pursuit of learning
+                new technologies. I do enjoy writing HTML, CSS, and Javascript. However the convenience of bootstrapping
+                an Angular or React application, working with their libraries to build modern applications shortens the
+                development process greatly.</p>
         </div>
+    </section>
+    <div class="navbar">
+        <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a class="active" href="about.html"><i class="fas fa-meteor"></i> About Me</a>
+        <a href="restaurants.html"><i class="fas fa-pizza-slice"></i> My Fav Eats</a>
+        <!-- <a href="my-kitchen.html"><i class="fas fa-igloo"></i> My Kitchen</a> -->
+        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      </div>
+</body>
 
-        <div class="column">
-            <div class="card">
-                <img src="images/team3.png" alt="Mike" style="width:100%" >
-                <div class="container">
-                    <h2>Eractic Specialist</h2>
-                    <p class="title">Art Director</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>mike@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <img src="images/team1.png" alt="Jane" style="width:100%">
-                <div class="container">
-                    <h2>Mad Criminal</h2>
-                    <p class="title">CEO & Founder</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>jane@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <img src="images/team2.png" alt="Mike" style="width:100%">
-                <div class="container">
-                    <h2>Anonymous Desperado</h2>
-                    <p class="title">Art Director</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>mike@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                </div>
-            </div>
-        </div>
-    </div>
-        <!-- <div class="column">
-            <div class="card">
-                <img src="images/team3.png" alt="John" style="width:100%">
-                <div class="container">
-                    <h2>John Doe</h2>
-                    <p class="title">Designer</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>john@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                </div>
-            </div>
-        </div> -->
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <img src="images/team4.png" alt="Jane" style="width:100%">
-                <div class="container">
-                    <h2>Insane Contender</h2>
-                    <p class="title">CEO & Founder</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>jane@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <img src="images/team5.png" alt="Mike" style="width:100%" >
-                <div class="container">
-                    <h2>Irate Warrior</h2>
-                    <p class="title">Art Director</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>mike@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="column">
-        <div class="card">
-            <img src="images/team6.png" alt="Mike" width="100%" height="300" >
-            <div class="container">
-                <h2>Ruler Angry</h2>
-                <p class="title">Art Director</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>mike@example.com</p>
-                <p><button class="button">Contact</button></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="column">
-        <div class="card">
-            <img src="images/team7.jpg" alt="Mike" width="100%" height="300" >
-            <div class="container">
-                <h2>Mystical Mangler</h2>
-                <p class="title">Art Director</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>mike@example.com</p>
-                <p><button class="button">Contact</button></p>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
+</html>
 </body>
 
 </html>
