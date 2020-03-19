@@ -17,7 +17,7 @@ body {
   }
   
   input[type=submit] {
-    background-color: #4e4caf;
+    background-color: #ce8d15;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -25,7 +25,7 @@ body {
   }
   
   input[type=submit]:hover {
-    background-color: #4e4caf;
+    background-color: #ce8d15;
   }
   
   /* Style the container/contact section */
@@ -88,7 +88,8 @@ body {
 }
 
 .navbar a.active {
-  background-color: #4e4caf;
+  background-color: #ce8d15;
+
 }
 
 /* .navbar {
@@ -115,7 +116,7 @@ body {
 }
 
 .navbar a.active {
-  background-color: #663ed6;
+      background-color: #ce8d15;
   color: white;
 } */
 
